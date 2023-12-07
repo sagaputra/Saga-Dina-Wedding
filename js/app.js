@@ -100,7 +100,6 @@ const util = (() => {
     };
 
     const salin = (btn, msg = 'Tersalin', timeout = 1500) => {
-        btn.select();
         btn.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(btn.getAttribute('data-nomer'));
 
