@@ -45,6 +45,18 @@ body::-webkit-scrollbar {
     z-index: 1055;
 }
 
+.btn-gift {
+    position: fixed;
+    height: 32px;
+    width: 32px;
+    bottom: 15vh;
+    right: 2vh;
+    z-index: 1055;
+}
+
+.img-gift {
+    height: 18px;
+}
 .loading-page {
     position: fixed;
     top: 0;
