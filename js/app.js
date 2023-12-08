@@ -100,7 +100,7 @@ const util = (() => {
     };
 
     const salin = (btn, msg = 'Tersalin', timeout = 1500) => {
-        navigator.clipboard.writeText(btn.getAttribute('data-nomer'));
+        navigator.clipboard.write(btn.getAttribute('data-nomer'));
 
         let tmp = btn.innerHTML;
         btn.innerHTML = msg;
