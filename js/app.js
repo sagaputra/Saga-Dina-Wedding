@@ -100,13 +100,8 @@ const util = (() => {
     };
 
     const salin = (btn, msg = 'Tersalin', timeout = 1500) => {
-        navigator.clipboard.writeText(btn.getAttribute('data-nomer'))
-        .then(() => {
-            alert(`successfully copied:${btn.getAttribute('data-nomer')}`);
-            })
-        .catch(() => {
-            alert("something went wrong");
-            });
+        btn.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(btn.getAttribute('data-nomer'));
 
         let tmp = btn.innerHTML;
         btn.innerHTML = msg;
