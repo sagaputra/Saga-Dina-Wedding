@@ -110,7 +110,7 @@
         <section class="container" id="home">
             <div class="text-center pt-4">
                 <!--carousel for homepage background-->
-                <div id="carouselExampleAutoplaying" class="carousel slide backgroundCarousel top-50 start-50 translate-middle d-block h-100" data-bs-ride="carousel">
+                <div id="carouselExampleAutoplaying" class="carousel slide backgroundCarousel top-50 start-50 translate-middle d-block h-100 w-100" data-bs-ride="carousel">
                     <div class="carousel-inner top-50 start-50 translate-middle">
                         <div class="animatedbg carousel-item active">
                             <img src="https://picsum.photos/1280/720?random=1" alt="">
@@ -232,7 +232,7 @@
                         <!-- Ganti waktunya pada data-waktu (sesuai format tersebut) -->
                         <div class="row justify-content-center" data-waktu="2024-03-03 09:00:00" id="tampilan-waktu">
                             <div class="col-12 p-1 d-block">
-                                <h1 class="d-block m-0 p-0" id="hari">0</h1><small class="ms-1 me-0 my-0 p-0 d-inline">Hari</small>
+                                <h1 class="d-block m-0 p-0" id="hari">0</h1><small class="ms-1 me-0 my-0 p-0 d-inline c-warning">Hari</small>
                             </div>
                             <div class="col-4 p-1">
                                 <h2 class="d-inline m-0 p-0" id="jam">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline">Jam</small>
@@ -501,8 +501,7 @@
                                 <h1 class="font-esthetic mt-0 mb-3" style="font-size: 3rem;">Love Gift</h1>
             
                                 <p class="mb-1" style="font-size: 0.9rem;">
-                                    Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami,
-                                    dapat melalui :
+                                    Kehadiran anda sudah merupakan hadiah terindah bagi kami, namun apabila memberi adalah bentuk tanda kasih dan sayang anda terhadap kami. Anda dapat mengirimkannya melalui: 
                                 </p>
             
                                 <div class="overflow-x-hidden">
@@ -511,9 +510,7 @@
                                         <div class="col-12 card-body border rounded-4 shadow p-3 m-3" style="max-width: 25rem;" data-aos="fade-down" data-aos-duration="1500">
                                             <img src="./assets/images/gift_6402287.png" class="img-fluid rounded" width="150" alt="bni">
             
-                                            <p class="card-text mt-3 mb-0" style="font-size: 0.9rem;">Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec. Jiken, Kab. Blora, Jawa Tengah 58372</p>
-                                            <p class="card-text" style="font-size: 0.9rem;">a.n Saga & Dina</p>
-                                            <p class="js-generate-bank"></p>
+                                            <p class="card-text mt-3 mb-4 js-generate-gifthtml" style="font-size: 0.9rem;"></p>
             
                                             <!-- Ubah juga data-nomer sesuai dengan yang ingin di copy -->
                                             <button class="btn btn-light btn-sm rounded-3"
@@ -521,7 +518,9 @@
                                             data-nomer="1789538817" onclick="util.salin(this)" autofocus><img class="img-fluid" style="height: 15px;" src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png" alt=""></button>
 
                                             <!-- Ubah juga data-nomer sesuai dengan yang ingin di copy -->
-                                            <button class="btn btn-light btn-sm rounded-3" data-nomer="Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec. Jiken, Kab. Blora, Jawa Tengah 58372" onclick="util.salin(this)" autofocus>Salin Alamat</button>
+                                            <button class="btn btn-light btn-sm rounded-3" 
+                                            data-bank=""
+                                            data-nomer="Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec. Jiken, Kab. Blora, Jawa Tengah 58372" onclick="util.salin(this)" autofocus>Salin Alamat</button>
 
                                             <!-- Ubah juga data-nomer sesuai dengan yang ingin di copy -->
                                             <button class="btn btn-light btn-sm rounded-3" 

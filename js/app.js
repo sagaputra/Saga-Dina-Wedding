@@ -106,9 +106,8 @@ const util = (() => {
             btn.innerHTML = msg;
             btn.disabled = true;
             let dataBank = btn.getAttribute('data-bank')+btn.getAttribute('data-nomer')
-            console.log(dataBank);
             
-            document.querySelector(`.js-generate-bank`).innerHTML=dataBank
+            document.querySelector(`.js-generate-gifthtml`).innerHTML=dataBank;
             let clear = null;
             clear = setTimeout(() => {
                 btn.innerHTML = tmp;
@@ -119,11 +118,10 @@ const util = (() => {
                 clear = null;
                 return;
             }, timeout);
-
         })
-        .catch(() => {
+        ,() => {
             alert(`copy failed`)
-        });
+        };
     };
 
     const timer = () => {
