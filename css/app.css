@@ -124,13 +124,13 @@ footer {
 .backgroundCarousel{
     z-index: -99;
     position: absolute;
-    
+    background-size: cover;
 }
 .backgroundCarousel .animatedbg {
     opacity: 50%;
-    -webkit-transition: opacity 5s;
-    -moz-transition: opacity 5s;
-    -ms-transition: opacity 5s;
-    -o-transition: opacity 5s;
-    transition: opacity 5s;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
 }
