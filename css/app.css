@@ -120,3 +120,17 @@ footer {
     margin-top: -0.4rem;
     padding-bottom: 4rem;
 }
+
+.backgroundCarousel{
+    z-index: -99;
+    position: absolute;
+    
+}
+.backgroundCarousel .animatedbg {
+    opacity: 50%;
+    -webkit-transition: opacity 5s;
+    -moz-transition: opacity 5s;
+    -ms-transition: opacity 5s;
+    -o-transition: opacity 5s;
+    transition: opacity 5s;
+}

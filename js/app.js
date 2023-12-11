@@ -100,22 +100,26 @@ const util = (() => {
     };
 
     const salin = (btn, msg = 'Tersalin', timeout = 1500) => {
-        navigator.clipboard.writeText(btn.getAttribute('data-nomer'));
-
-        let tmp = btn.innerHTML;
-        btn.innerHTML = msg;
-        btn.disabled = true;
-
-        let clear = null;
-        clear = setTimeout(() => {
-            btn.innerHTML = tmp;
-            btn.disabled = false;
-            btn.focus();
-
-            clearTimeout(clear);
-            clear = null;
-            return;
-        }, timeout);
+        navigator.clipboard.writeText(btn.getAttribute('data-nomer'))
+        .then(() => {
+            let tmp = btn.innerHTML;
+            btn.innerHTML = msg;
+            btn.disabled = true;
+    
+            let clear = null;
+            clear = setTimeout(() => {
+                btn.innerHTML = tmp;
+                btn.disabled = false;
+                btn.focus();
+    
+                clearTimeout(clear);
+                clear = null;
+                return;
+            }, timeout);
+        })
+        .catch(() => {
+            alert(`copy failed`)
+        });
     };
 
     const timer = () => {
