@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
     position: fixed;
     height: 32px;
     width: 32px;
-    bottom: 13vh;
+    bottom: 15vh;
     right: 2vh;
     z-index: 1055;
     border: solid 1px white;
@@ -60,7 +60,7 @@ body::-webkit-scrollbar {
     position: fixed;
     height: 52px;
     width: 32px;
-    bottom: 17vh;
+    bottom: 21vh;
     right: 2vh;
     z-index: 1055;
     border: solid 1px white;
