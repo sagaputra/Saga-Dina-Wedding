@@ -1000,3 +1000,35 @@ const comment = (() => {
         },
     };
 })();
+
+// print "false" if direction is down and "true" if up
+let scrollEvent=false;
+function checkScrollState() {
+    window.onscroll = function(e) {
+        scrollEvent=this.oldScroll > this.scrollY
+        this.oldScroll = this.scrollY;
+        if (scrollEvent==true) {
+            setInterval(() => {scrollEvent=false},50)
+        }
+        return scrollEvent
+    }
+}
+// auto scroll function
+function scrollToBottom(timedelay=0) {
+    let scrollId;
+    let height = 0;
+    let minScrollHeight = 1;
+    // tracking event scroll
+    scrollId = setInterval(function () {
+        if (height <= document.body.scrollHeight && scrollEvent==false) {
+            
+            window.scrollBy(0, minScrollHeight);
+            checkScrollState();
+        }
+        else {
+            clearInterval(scrollId);
+            checkScrollState()
+        }
+        height += minScrollHeight;
+    }, timedelay);
+}

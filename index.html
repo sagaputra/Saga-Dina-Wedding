@@ -140,12 +140,12 @@
                 </a>
 
                 <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
-                    <div class="mouse-animation">
+                    <div class="mouse-animation" onclick="scrollToBottom(25)">
                         <div class="scroll-animation"></div>
                     </div>
                 </div>
 
-                <p class="m-0">Scroll Down</p>
+                <p class="m-0">Click to Auto Scroll Down</p>
             </div>
         </section>
 
@@ -476,12 +476,12 @@
     </div>
 
     <!-- Audio Button -->
-    <button type="button" id="tombol-musik" style="display: none;" class="btn btn-light btn-sm rounded-circle btn-music" onclick="util.play(this)" data-status="true" data-url="./assets/music/sound.mp3">
+    <button type="button" id="tombol-musik" style="display: none;" class="btn btn-sm rounded-circle btn-music" onclick="util.play(this)" data-status="true" data-url="./assets/music/sound.mp3">
         <i class="fa-solid fa-circle-pause"></i>
     </button>
 
     <!-- Gift Button -->
-    <button type="button" id="tombol-gift" class="btn btn-light btn-sm rounded-circle btn-gift" data-bs-toggle="modal" data-bs-placement="left" data-bs-target="#exampleModal" title="tombolGift">
+    <button type="button" id="tombol-musik" class="btn btn-sm rounded-circle btn-gift" data-bs-toggle="modal" data-bs-placement="left" data-bs-target="#exampleModal" title="tombolGift">
         <img class="img-gift position-absolute top-50 start-50 translate-middle" src="./assets/images/gift_6402287.png" alt="">
     </button>
 
@@ -501,7 +501,7 @@
                                 <h1 class="font-esthetic mt-0 mb-3" style="font-size: 3rem;">Love Gift</h1>
             
                                 <p class="mb-1" style="font-size: 0.9rem;">
-                                    Kehadiran anda sudah merupakan hadiah terindah bagi kami, namun apabila memberi adalah bentuk tanda kasih dan sayang anda terhadap kami. Anda dapat mengirimkannya melalui: 
+                                    Kehadiran anda sudah merupakan hadiah terindah bagi kami, namun apabila memberi adalah bentuk tanda kasih anda terhadap kami. Anda dapat mengirimkannya melalui: 
                                 </p>
             
                                 <div class="overflow-x-hidden">
@@ -536,6 +536,12 @@
             </div>
         </div>
     </div>
+
+    <!-- auto scroll button -->
+    <button  type="button" id="tombol-musik" class="btn btn-sm btn-scroll" onclick="scrollToBottom(25)" title="tombolScroll">
+        <div class="scroll-animation1"></div>
+    </button>
+
     <!-- Loading page -->
     <div class="loading-page" id="loading" style="opacity: 1;">
         <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">

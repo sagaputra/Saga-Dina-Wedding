@@ -43,15 +43,28 @@ body::-webkit-scrollbar {
     bottom: 9vh;
     right: 2vh;
     z-index: 1055;
+    border: solid 1px white;
 }
 
 .btn-gift {
     position: fixed;
     height: 32px;
     width: 32px;
-    bottom: 15vh;
+    bottom: 13vh;
     right: 2vh;
     z-index: 1055;
+    border: solid 1px white;
+}
+
+.btn-scroll {
+    position: fixed;
+    height: 52px;
+    width: 32px;
+    bottom: 17vh;
+    right: 2vh;
+    z-index: 1055;
+    border: solid 1px white;
+    border-radius: 5px;
 }
 
 .img-gift {
@@ -99,6 +112,18 @@ body::-webkit-scrollbar {
 }
 
 .mouse-animation>.scroll-animation {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #ffffff;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.scroll-animation1 {
+    margin: auto;
     width: 0.25rem;
     height: 0.625rem;
     border-radius: 25%;
