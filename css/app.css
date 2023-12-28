@@ -56,17 +56,6 @@ body::-webkit-scrollbar {
     border: solid 1px white;
 }
 
-.btn-scroll {
-    position: fixed;
-    height: 52px;
-    width: 32px;
-    bottom: 21vh;
-    right: 2vh;
-    z-index: 1055;
-    border: solid 1px white;
-    border-radius: 5px;
-}
-
 .img-gift {
     height: 18px;
 }
