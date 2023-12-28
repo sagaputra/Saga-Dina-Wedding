@@ -148,3 +148,9 @@ footer {
     -o-transition: opacity;
     transition: opacity;
 }
+
+.welcomePage {
+    background-image: url(/assets/images/rm428-0041.webp);
+    background-size: cover;
+    background-blend-mode:overlay;
+}
