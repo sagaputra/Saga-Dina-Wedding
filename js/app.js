@@ -151,11 +151,11 @@ const util = (() => {
     if (btn.getAttribute("data-status") !== "true") {
       btn.setAttribute("data-status", "true");
       audio.play();
-      btn.innerHTML = '<i class="fa-solid fa-circle-pause"></i>';
+      btn.innerHTML = '<i class="fa-solid fa-circle-pause fa-spin"></i>';
     } else {
       btn.setAttribute("data-status", "false");
       audio.pause();
-      btn.innerHTML = '<i class="fa-solid fa-circle-play"></i>';
+      btn.innerHTML = '<i class="fa-solid fa-circle-play fa-bounce"></i>';
     }
   };
 
