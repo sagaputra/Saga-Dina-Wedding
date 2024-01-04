@@ -1072,3 +1072,15 @@ const comment = (() => {
     },
   };
 })();
+
+// bounce animation on navbar menu
+const tombolNavbar = document.querySelectorAll(`.nav-link`);
+window.onscroll = () => {
+  tombolNavbar.forEach((navbar) => {
+    if (navbar.classList.contains(`active`)) {
+      navbar.classList.add(`fa-bounce`);
+    } else {
+      navbar.classList.remove(`fa-bounce`);
+    }
+  });
+};

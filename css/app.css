@@ -40,6 +40,8 @@ body::-webkit-scrollbar {
 
 .btn-music {
   position: fixed;
+  height: 32px;
+  width: 32px;
   bottom: 9vh;
   right: 2vh;
   z-index: 1055;
