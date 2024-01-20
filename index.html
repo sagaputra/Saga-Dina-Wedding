@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="id" data-bs-theme="dark">
+<html lang="id">
   <head>
     <!-- Common Tag -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Undangan Pernikahan Saga & Dina</title>
-
-    <!--recipient update-->
 
     <!-- SEO Tag -->
     <meta name="author" content="Saga" />
@@ -182,7 +180,7 @@
   >
     <!-- Navbar Bottom -->
     <nav
-      class="navbar navbar-dark bg-dark navbar-expand fixed-bottom rounded-top-4 p-0"
+      class="navbar navbar-light bg-light navbar-expand fixed-bottom rounded-pill p-0 m-3 opacity-75"
       id="navbar-menus"
     >
       <ul class="navbar-nav nav-justified w-100 align-items-center">
@@ -201,9 +199,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#tanggal">
             <i class="fa-solid fa-calendar-check"></i>
-            <span class="d-block" style="font-size: 0.7rem"
-              >Tanggal&Tempat</span
-            >
+            <span class="d-block" style="font-size: 0.7rem">Waktu&Tempat</span>
           </a>
         </li>
         <li class="nav-item">
@@ -231,76 +227,66 @@
       tabindex="0"
     >
       <!-- Home -->
-      <section class="container background-carousel p-0" id="home">
-        <!-- Wave Separator -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#111111"
-            fill-opacity="1"
-            d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-          ></path>
-        </svg>
+      <section
+        class="container background-welcomepage p-0"
+        id="home"
+        style="height: 100vh"
+      >
         <div class="text-center pt-4">
-          <h1 class="font-esthetic mb-4" style="font-size: 2.5rem">
+          <h1 class="font-esthetic mb-5" style="font-size: 2.5rem">
             Undangan Pernikahan
           </h1>
 
-          <div class="py-4">
-            <div class="img-crop border border-3 border-light shadow mx-auto">
-              <img
-                src="./assets/images/bg.jpeg"
-                alt="bg"
-                onclick="util.modal(this)"
-              />
+          <div class="container-fluid position-relative" style="top: 25vh">
+            <div class="pt-5">
+              <div class="img-crop border-custom shadow mx-auto opacity-75">
+                <img
+                  src="./assets/images/bg.jpeg"
+                  alt="bg"
+                  onclick="util.modal(this)"
+                />
+              </div>
             </div>
+
+            <h1 class="font-esthetic mt-1" style="font-size: 3rem">
+              Saga & Dina
+            </h1>
+            <h4>Minggu, 3 Maret 2024</h4>
+
+            <a
+              class="btn btn-outline-light btn-sm shadow rounded-pill px-3 btn-custom"
+              target="_blank"
+              href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGljdjkxcnB0OGkwYzUzMzFrZHNrNDBvdDMgc2FnYXB1dHJhOEBt&tmsrc=sagaputra8%40gmail.com"
+            >
+              <i class="fa-solid fa-calendar-check p-1 btn-custom"></i> Save The
+              Date
+            </a>
           </div>
 
-          <h1 class="font-esthetic my-4" style="font-size: 3rem">
-            Saga & Dina
-          </h1>
-          <h4>Minggu, 3 Maret 2024</h4>
-
-          <a
-            class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2"
-            target="_blank"
-            href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGljdjkxcnB0OGkwYzUzMzFrZHNrNDBvdDMgc2FnYXB1dHJhOEBt&tmsrc=sagaputra8%40gmail.com"
-          >
-            <i class="fa-solid fa-calendar-check me-2"></i>Save The Date
-          </a>
-
+          <!-- scroll down display -->
           <div
             class="d-flex justify-content-center align-items-center mt-4 mb-2"
           >
-            <a href="#mempelai">
-              <div class="mouse-animation">
+            <a href="#home">
+              <div class="mouse-animation rounded-1">
                 <div class="scroll-animation"></div>
               </div>
             </a>
           </div>
-
-          <p class="m-0">Scroll Down</p>
-          <!-- Wave Separator -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-              fill="#111111"
-              fill-opacity="1"
-              d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-            ></path>
-          </svg>
         </div>
       </section>
 
       <!-- Mempelai -->
-      <section class="dark-section" id="mempelai">
+      <section class="dark-section py-5" id="mempelai">
         <div class="text-center">
           <h1 class="font-arabic py-4 px-2" style="font-size: 2rem">
             بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
           </h1>
-          <h1 class="font-esthetic py-4 px-2" style="font-size: 2rem">
+          <h1 class="font-esthetic py-0 px-2" style="font-size: 2rem">
             Assalamualaikum Warahmatullahi Wabarakatuh
           </h1>
 
-          <p class="pb-3 px-3">
+          <p class="pb-1 px-3">
             Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk
             menghadiri acara pernikahan kami:
           </p>
@@ -308,7 +294,7 @@
           <div class="overflow-x-hidden">
             <div data-aos="fade-right" data-aos-duration="2000">
               <div
-                class="img-crop border border-3 border-light shadow my-4 mx-auto"
+                class="img-crop border border-3 border-custom shadow my-2 mx-auto"
               >
                 <img
                   src="./assets/images/cowo.png"
@@ -319,15 +305,15 @@
               <h1 class="font-esthetic" style="font-size: 3rem">
                 Saga Bagus Putra Pridayanto
               </h1>
-              <h5 class="mt-3 mb-0">Putra</h5>
+              <h5 class="mt-0 mb-0">Putra</h5>
               <p class="mb-0">Bapak Agus Supriyanto & Ibu Saodah</p>
             </div>
 
-            <h1 class="font-esthetic my-4" style="font-size: 4rem">&</h1>
+            <h1 class="font-esthetic my-0" style="font-size: 4rem">&</h1>
 
             <div data-aos="fade-left" data-aos-duration="2000">
               <div
-                class="img-crop border border-3 border-light shadow my-4 mx-auto"
+                class="img-crop border border-3 border-custom shadow my-2 mx-auto"
               >
                 <img
                   src="./assets/images/cewe.png"
@@ -338,30 +324,25 @@
               <h1 class="font-esthetic" style="font-size: 3rem">
                 Ayu Maulidina Larasati
               </h1>
-              <h5 class="mt-3 mb-0">Putri</h5>
+              <h5 class="mt-0 mb-0">Putri</h5>
               <p class="mb-0">Bapak Masrur & Ibu Tri Murtiati</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Wave Separator -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#111111"
-          fill-opacity="1"
-          d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-        ></path>
-      </svg>
-
       <!-- Firman Allah Subhanahu Wa Ta'ala -->
       <div class="container">
-        <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+        <div
+          class="text-center p-3"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <h1 class="font-esthetic mt-0 mb-3" style="font-size: 2rem">
             Allah Subhanahu Wa Ta'ala berfirman
           </h1>
 
-          <p style="font-size: 0.9rem" class="px-2">
+          <p style="font-size: 0.9rem; color: #594545" class="px-2">
             Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
             pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
             dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
@@ -369,18 +350,11 @@
             terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
           </p>
 
-          <span class="mb-0"><strong>QS. Ar-Rum Ayat 21</strong></span>
+          <span class="mb-0" style="color: #594545"
+            ><strong>QS. Ar-Rum Ayat 21</strong></span
+          >
         </div>
       </div>
-
-      <!-- Wave Separator -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#111111"
-          fill-opacity="1"
-          d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
 
       <!-- Tanggal -->
       <section class="dark-section" id="tanggal">
@@ -389,30 +363,33 @@
             <h1 class="font-esthetic py-3" style="font-size: 2rem">
               Waktu Menuju Acara
             </h1>
-            <div class="border rounded-pill shadow py-2 px-4 mx-2 mb-4">
-              <!-- Ganti waktunya pada data-waktu (sesuai format tersebut) -->
+            <div
+              class="border rounded-pill shadow py-2 px-2 mx-2 mb-4"
+              style="background-color: #fff8ea"
+            >
+              <!-- Ganti pada data-waktu (sesuai format tersebut) -->
               <div
                 class="row justify-content-center"
                 data-waktu="2024-03-03 09:00:00"
                 id="tampilan-waktu"
               >
-                <div class="col-12 p-1 d-block">
-                  <h1 class="d-block m-0 p-0" id="hari">0</h1>
-                  <small class="ms-1 me-0 my-0 p-0 d-inline c-warning"
+                <div class="col-3 p-0">
+                  <h2 class="d-block m-0 p-0" id="hari">0</h2>
+                  <small class="ms-1 me-0 my-0 p-0 d-block c-warning"
                     >Hari</small
                   >
                 </div>
-                <div class="col-4 p-1">
-                  <h2 class="d-inline m-0 p-0" id="jam">0</h2>
-                  <small class="ms-1 me-0 my-0 p-0 d-inline">Jam</small>
+                <div class="col-3 p-0">
+                  <h2 class="d-block m-0 p-0" id="jam">0</h2>
+                  <small class="ms-1 me-0 my-0 p-0 d-block">Jam</small>
                 </div>
-                <div class="col-4 p-1">
-                  <h2 class="d-inline m-0 p-0" id="menit">0</h2>
-                  <small class="ms-1 me-0 my-0 p-0 d-inline">Menit</small>
+                <div class="col-3 p-0">
+                  <h2 class="d-block m-0 p-0" id="menit">0</h2>
+                  <small class="ms-1 me-0 my-0 p-0 d-block">Menit</small>
                 </div>
-                <div class="col-4 p-1">
-                  <h2 class="d-inline m-0 p-0" id="detik">0</h2>
-                  <small class="ms-1 me-0 my-0 p-0 d-inline">Detik</small>
+                <div class="col-3 p-0">
+                  <h2 class="d-block m-0 p-0" id="detik">0</h2>
+                  <small class="ms-1 me-0 my-0 p-0 d-block">Detik</small>
                 </div>
               </div>
             </div>
@@ -422,15 +399,421 @@
               insyaAllah kami akan menyelenggarakan acara :
             </p>
 
-            <div class="overflow-x-hidden">
-              <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                <h1 class="font-esthetic" style="font-size: 2rem">Akad</h1>
-                <p>Pukul 09.00 WIB - Selesai</p>
+            <!-- Akad -->
+            <div
+              class="row h-100 justify-content-center align-items-center mb-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <div
+                class="col-md-12"
+                style="display: flex; justify-content: center"
+              >
+                <div
+                  style="
+                    width: 24%;
+                    max-width: 70px !important;
+                    background-color: #594545;
+                    position: relative;
+                  "
+                >
+                  <div
+                    style="
+                      text-align: center;
+                      align-items: center;
+                      display: flex;
+                      justify-content: center;
+                      color: var(--tc-a);
+                      font-size: 33px;
+                      font-weight: 400;
+                      font-family: 'al';
+                      line-height: 1em;
+                      letter-spacing: 2px;
+                      text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.3);
+                      height: 100%;
+                      width: 100%;
+                      padding: 15px;
+                    "
+                  >
+                    <div
+                      style="
+                        writing-mode: vertical-lr;
+                        transform: rotate(180deg);
+                        text-transform: uppercase;
+                        color: #c69774;
+                      "
+                    >
+                      Akad Nikah
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    width: 76%;
+                    background-color: #fff8ea;
+                    padding: 2em 1em 1em 1.5em;
+                    border: 2px solid var(--border-a);
+                  "
+                >
+                  <div class="">
+                    <div
+                      class="business-solution"
+                      style="
+                        background-color: transparent;
+                        text-align: center;
+                        padding: 10px;
+                        padding-bottom: 40px;
+                      "
+                    >
+                      <div>
+                        <div
+                          class="d-flex align-items-center mb-4"
+                          style="
+                            border-bottom: 1px solid var(--color-a);
+                            padding-bottom: 20px;
+                          "
+                        >
+                          <h2
+                            class="text-left title wow fadeIn mb-0 w-50 fontAdditional"
+                            data-wow-duration="2s"
+                            data-wow-delay="0.3s"
+                            style="
+                              font-size: 100px;
+                              color: var(--color-a) !important;
+                              visibility: visible;
+                              animation-duration: 2s;
+                              animation-delay: 0.3s;
+                              animation-name: fadeIn;
+                            "
+                          >
+                            3
+                          </h2>
+                          <div class="w-50">
+                            <p
+                              class="mb-0 wow fadeIn"
+                              data-wow-duration="2s"
+                              data-wow-delay="0.3s"
+                              style="
+                                margin-top: -3px;
+                                text-transform: uppercase;
+                                font-variant-caps: all-petite-caps;
+                                font-size: 23px;
+                                line-height: 1;
+                                visibility: visible;
+                                animation-duration: 2s;
+                                animation-delay: 0.3s;
+                                animation-name: fadeIn;
+                              "
+                            >
+                              Minggu
+                            </p>
+                            <p
+                              class="mb-0 wow fadeIn"
+                              data-wow-duration="2s"
+                              data-wow-delay="0.3s"
+                              style="
+                                text-transform: uppercase;
+                                font-variant-caps: all-petite-caps;
+                                font-size: 23px;
+                                line-height: 1;
+                                visibility: visible;
+                                animation-duration: 2s;
+                                animation-delay: 0.3s;
+                                animation-name: fadeIn;
+                              "
+                            >
+                              Maret
+                            </p>
+                            <p
+                              class="mb-0 wow fadeIn"
+                              data-wow-duration="2s"
+                              data-wow-delay="0.3s"
+                              style="
+                                text-transform: uppercase;
+                                font-variant-caps: all-petite-caps;
+                                font-size: 23px;
+                                line-height: 1;
+                                visibility: visible;
+                                animation-duration: 2s;
+                                animation-delay: 0.3s;
+                                animation-name: fadeIn;
+                              "
+                            >
+                              2024
+                            </p>
+                          </div>
+                        </div>
+                        <!-- <p class="text-center mb-0" style="margin-top:15px;font-weight: 600;"></p> -->
+                        <p
+                          style="
+                            margin-bottom: 5px;
+                            visibility: visible;
+                            animation-duration: 3s;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInUp;
+                          "
+                          class="text-left wow fadeInUp"
+                          data-wow-duration="3s"
+                          data-wow-delay="0.3s"
+                        >
+                          <i
+                            class="fa fa-clock-o"
+                            style="
+                              font-size: 20px;
+                              position: relative;
+                              top: 2px;
+                            "
+                          ></i>
+                          <span>09.00 WIB - 10.00 WIB</span>
+                        </p>
+                        <h6
+                          class="text-left mb-0 wow fadeInUp"
+                          style="
+                            margin-top: 20px;
+                            font-variant-caps: all-petite-caps;
+                            font-size: 23px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            visibility: visible;
+                            animation-duration: 3s;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInUp;
+                          "
+                          data-wow-duration="3s"
+                          data-wow-delay="0.3s"
+                        >
+                          Lokasi Acara:
+                        </h6>
+                        <p
+                          class="text-left wow fadeInUp"
+                          style="
+                            margin-bottom: 15px;
+                            font-size: 15px;
+                            font-weight: 400;
+                            visibility: visible;
+                            animation-duration: 3s;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInUp;
+                          "
+                          data-wow-duration="3s"
+                          data-wow-delay="0.3s"
+                        >
+                          Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec.
+                          Jiken, Kab. Blora, Jawa Tengah 58372
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
-                <h1 class="font-esthetic" style="font-size: 2rem">Resepsi</h1>
-                <p>Pukul 10.00 WIB - Selesai</p>
+            <!-- Resepsi -->
+            <div
+              class="row h-100 justify-content-center align-items-center mb-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <div
+                class="col-md-12"
+                style="display: flex; justify-content: center"
+              >
+                <div
+                  style="
+                    width: 24%;
+                    max-width: 70px !important;
+                    background-color: #594545;
+                    position: relative;
+                  "
+                >
+                  <div
+                    style="
+                      text-align: center;
+                      align-items: center;
+                      display: flex;
+                      justify-content: center;
+                      color: var(--tc-a);
+                      font-size: 33px;
+                      font-weight: 400;
+                      font-family: 'al';
+                      line-height: 1em;
+                      letter-spacing: 2px;
+                      text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.3);
+                      height: 100%;
+                      width: 100%;
+                      padding: 15px;
+                    "
+                  >
+                    <div
+                      style="
+                        writing-mode: vertical-lr;
+                        transform: rotate(180deg);
+                        text-transform: uppercase;
+                        color: #c69774;
+                      "
+                    >
+                      Resepsi
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    width: 76%;
+                    background-color: #fff8ea;
+                    padding: 2em 1em 1em 1.5em;
+                    border: 2px solid var(--border-a);
+                  "
+                >
+                  <div class="">
+                    <div
+                      class="business-solution"
+                      style="
+                        background-color: transparent;
+                        text-align: center;
+                        padding: 10px;
+                        padding-bottom: 40px;
+                      "
+                    >
+                      <div>
+                        <div
+                          class="d-flex align-items-center mb-4"
+                          style="
+                            border-bottom: 1px solid var(--color-a);
+                            padding-bottom: 20px;
+                          "
+                        >
+                          <h2
+                            class="text-left title wow fadeIn mb-0 w-50 fontAdditional"
+                            data-wow-duration="2s"
+                            data-wow-delay="0.3s"
+                            style="
+                              font-size: 100px;
+                              color: var(--color-a) !important;
+                              visibility: visible;
+                              animation-duration: 2s;
+                              animation-delay: 0.3s;
+                              animation-name: fadeIn;
+                            "
+                          >
+                            3
+                          </h2>
+                          <div class="w-50">
+                            <p
+                              class="mb-0 wow fadeIn"
+                              data-wow-duration="2s"
+                              data-wow-delay="0.3s"
+                              style="
+                                margin-top: -3px;
+                                text-transform: uppercase;
+                                font-variant-caps: all-petite-caps;
+                                font-size: 23px;
+                                line-height: 1;
+                                visibility: visible;
+                                animation-duration: 2s;
+                                animation-delay: 0.3s;
+                                animation-name: fadeIn;
+                              "
+                            >
+                              Minggu
+                            </p>
+                            <p
+                              class="mb-0 wow fadeIn"
+                              data-wow-duration="2s"
+                              data-wow-delay="0.3s"
+                              style="
+                                text-transform: uppercase;
+                                font-variant-caps: all-petite-caps;
+                                font-size: 23px;
+                                line-height: 1;
+                                visibility: visible;
+                                animation-duration: 2s;
+                                animation-delay: 0.3s;
+                                animation-name: fadeIn;
+                              "
+                            >
+                              Maret
+                            </p>
+                            <p
+                              class="mb-0 wow fadeIn"
+                              data-wow-duration="2s"
+                              data-wow-delay="0.3s"
+                              style="
+                                text-transform: uppercase;
+                                font-variant-caps: all-petite-caps;
+                                font-size: 23px;
+                                line-height: 1;
+                                visibility: visible;
+                                animation-duration: 2s;
+                                animation-delay: 0.3s;
+                                animation-name: fadeIn;
+                              "
+                            >
+                              2024
+                            </p>
+                          </div>
+                        </div>
+                        <!-- <p class="text-center mb-0" style="margin-top:15px;font-weight: 600;"></p> -->
+                        <p
+                          style="
+                            margin-bottom: 5px;
+                            visibility: visible;
+                            animation-duration: 3s;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInUp;
+                          "
+                          class="text-left wow fadeInUp"
+                          data-wow-duration="3s"
+                          data-wow-delay="0.3s"
+                        >
+                          <i
+                            class="fa fa-clock-o"
+                            style="
+                              font-size: 20px;
+                              position: relative;
+                              top: 2px;
+                            "
+                          ></i>
+                          <span>10.00 WIB - Selesai</span>
+                        </p>
+                        <h6
+                          class="text-left mb-0 wow fadeInUp"
+                          style="
+                            margin-top: 20px;
+                            font-variant-caps: all-petite-caps;
+                            font-size: 23px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            visibility: visible;
+                            animation-duration: 3s;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInUp;
+                          "
+                          data-wow-duration="3s"
+                          data-wow-delay="0.3s"
+                        >
+                          Lokasi Acara:
+                        </h6>
+                        <p
+                          class="text-left wow fadeInUp"
+                          style="
+                            margin-bottom: 15px;
+                            font-size: 15px;
+                            font-weight: 400;
+                            visibility: visible;
+                            animation-duration: 3s;
+                            animation-delay: 0.3s;
+                            animation-name: fadeInUp;
+                          "
+                          data-wow-duration="3s"
+                          data-wow-delay="0.3s"
+                        >
+                          Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec.
+                          Jiken, Kab. Blora, Jawa Tengah 58372
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -439,9 +822,10 @@
               class="container-fluid border shadow rounded"
               data-aos="fade-up"
               data-aos-duration="1500"
+              style="background-color: #fff8ea"
             >
               <iframe
-                class="container-fluid"
+                class="container-fluid px-3 py-3"
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.0354636829493!2d111.51189699999999!3d-7.005107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMDAnMTguNCJTIDExMcKwMzAnNDIuOCJF!5e0!3m2!1sen!2sid!4v1702039618021!5m2!1sen!2sid"
                 width="600"
                 height="450"
@@ -452,6 +836,10 @@
               ></iframe>
             </div>
             <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
+              <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem">
+                Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec. Jiken, Kab.
+                Blora, Jawa Tengah 58372
+              </p>
               <a
                 href="https://maps.app.goo.gl/xK7JnFq9KNsP7gYU8"
                 target="_blank"
@@ -460,210 +848,211 @@
                 <i class="fa-solid fa-map-location-dot me-2"></i>Lihat di Google
                 Maps
               </a>
-              <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem">
-                Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec. Jiken, Kab.
-                Blora, Jawa Tengah 58372
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Galeri Foto -->
+      <!-- Galeri & Cerita -->
       <section class="dark-section" id="galeri">
         <div class="container pb-2 pt-4">
-          <div class="card-body border rounded-4 shadow p-3">
+          <div class="card-body border rounded-4 shadow p-3 text-center">
+            <button
+              type="button"
+              class="btn btn-cerita-galeri"
+              style="background-color: transparant; border: none"
+            >
+              <i class="fa-solid fa-angle-left d-inline"></i>
+            </button>
             <h1
-              class="font-esthetic text-center py-3"
+              class="font-esthetic text-center py-3 d-inline text-cerita-galeri"
               data-aos="fade-down"
               data-aos-duration="1500"
               style="font-size: 2rem"
             >
               Galeri
             </h1>
-
-            <div
-              id="carousel-foto-satu"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              class="carousel slide"
-              data-bs-ride="carousel"
+            <button
+              type="button"
+              class="btn btn-cerita-galeri"
+              style="background-color: transparant; border: none"
             >
-              <div class="carousel-indicators">
+              <i class="fa-solid fa-angle-right d-inline"></i>
+            </button>
+            <div class="container-fluid p-0 m-0 html-cerita-galeri">
+              <div
+                id="carousel-foto-satu"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner rounded-4">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://picsum.photos/1280/720?random=1"
+                      alt="gambar 1"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://picsum.photos/1280/720?random=2"
+                      alt="gambar 2"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://picsum.photos/1280/720?random=3"
+                      alt="gambar 3"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                </div>
+
                 <button
+                  class="carousel-control-prev"
                   type="button"
                   data-bs-target="#carousel-foto-satu"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
                 <button
+                  class="carousel-control-next"
                   type="button"
                   data-bs-target="#carousel-foto-satu"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel-foto-satu"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-
-              <div class="carousel-inner rounded-4">
-                <div class="carousel-item active">
-                  <img
-                    src="https://picsum.photos/1280/720?random=1"
-                    alt="gambar 1"
-                    class="d-block w-100"
-                    onclick="util.modal(this)"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://picsum.photos/1280/720?random=2"
-                    alt="gambar 2"
-                    class="d-block w-100"
-                    onclick="util.modal(this)"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://picsum.photos/1280/720?random=3"
-                    alt="gambar 3"
-                    class="d-block w-100"
-                    onclick="util.modal(this)"
-                  />
-                </div>
-              </div>
-
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel-foto-satu"
-                data-bs-slide="prev"
+              <div
+                id="carousel-foto-dua"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                class="carousel slide mt-4"
+                data-bs-ride="carousel"
               >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-dua"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-dua"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-dua"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
 
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel-foto-satu"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+                <div class="carousel-inner rounded-4">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://picsum.photos/1280/720?random=4"
+                      alt="gambar 4"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://picsum.photos/1280/720?random=5"
+                      alt="gambar 5"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://picsum.photos/1280/720?random=6"
+                      alt="gambar 6"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                </div>
 
-            <div
-              id="carousel-foto-dua"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              class="carousel slide mt-4"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
                 <button
+                  class="carousel-control-prev"
                   type="button"
                   data-bs-target="#carousel-foto-dua"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
                 <button
+                  class="carousel-control-next"
                   type="button"
                   data-bs-target="#carousel-foto-dua"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel-foto-dua"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-
-              <div class="carousel-inner rounded-4">
-                <div class="carousel-item active">
-                  <img
-                    src="https://picsum.photos/1280/720?random=4"
-                    alt="gambar 4"
-                    class="d-block w-100"
-                    onclick="util.modal(this)"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://picsum.photos/1280/720?random=5"
-                    alt="gambar 5"
-                    class="d-block w-100"
-                    onclick="util.modal(this)"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="https://picsum.photos/1280/720?random=6"
-                    alt="gambar 6"
-                    class="d-block w-100"
-                    onclick="util.modal(this)"
-                  />
-                </div>
-              </div>
-
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel-foto-dua"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel-foto-dua"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Wave Separator -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#111111"
-          fill-opacity="1"
-          d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
-        ></path>
-      </svg>
-
       <!-- Ucapan -->
-      <section class="m-0 p-0" id="ucapan">
+      <section class="my-4 p-0" id="ucapan">
         <div class="container">
           <div class="card-body border rounded-4 shadow p-3">
             <h1 class="font-esthetic text-center mb-3" style="font-size: 3rem">
@@ -769,15 +1158,6 @@
           </nav>
         </div>
       </section>
-
-      <!-- Wave Separator -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#111111"
-          fill-opacity="1"
-          d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
-      </svg>
     </main>
 
     <!-- Footer Undangan -->
@@ -809,10 +1189,22 @@
 
           <hr class="mt-3 mb-2" />
 
-          <div class="row align-items-center">
-            <small class="text-light text-center">
-              Build with<i class="fa-solid fa-heart mx-1"></i>Saga&Dina
-            </small>
+          <div
+            class="row align-items-center mb-3"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <a href="https://www.instagram.com/saga_putraa/">
+              <button
+                class="btn shadow-lg rounded-5"
+                style="background-color: #594545"
+              >
+                <small class="text-light text-center">
+                  Build with<i class="fa-solid fa-heart mx-1 fa-fade"></i
+                  >@saga_putraa
+                </small>
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -827,13 +1219,13 @@
         <div class="text-center">
           <h1 class="mb-4" style="font-size: 1rem">Assalamualaikum Wr. Wb.</h1>
           <div class="mb-4" style="font-size: 1rem" id="nama-tamu"></div>
-          <h1 class="mb-4" style="font-size: 1rem">Your're invited to</h1>
+          <h1 class="mb-4" style="font-size: 1rem">You're invited to</h1>
           <h1 class="font-esthetic mb-4" style="font-size: 2.5rem">
             The Wedding Of
           </h1>
 
           <div
-            class="img-crop border border-3 border-light shadow mb-4 mx-auto"
+            class="img-crop border border-3 border-custom shadow mb-4 mx-auto"
           >
             <img src="./assets/images/bg.jpeg" alt="bg" />
           </div>
@@ -844,7 +1236,7 @@
 
           <button
             type="button"
-            class="btn btn-light shadow rounded-4 mt-4"
+            class="btn btn-light shadow rounded-4 mt-4 btn-custom"
             onclick="util.buka()"
           >
             <i class="fa-solid fa-envelope-open me-2"></i>Buka Undangan
@@ -916,7 +1308,7 @@
                     <div class="row justify-content-center">
                       <div
                         class="col-12 card-body border rounded-4 shadow p-3 m-3"
-                        style="max-width: 25rem"
+                        style="max-width: 25rem; background-color: #c69774"
                         data-aos="fade-down"
                         data-aos-duration="1500"
                       >

@@ -1084,3 +1084,186 @@ window.onscroll = () => {
     }
   });
 };
+
+// cerita & galeri
+const btnCeritaGaleri = document.querySelectorAll(`.btn-cerita-galeri`);
+const htmlCeritaGaleri = document.querySelector(`.html-cerita-galeri`);
+const galeriHTML = "<div
+                id="carousel-foto-satu"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner rounded-4">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://picsum.photos/1280/720?random=1"
+                      alt="gambar 1"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://picsum.photos/1280/720?random=2"
+                      alt="gambar 2"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://picsum.photos/1280/720?random=3"
+                      alt="gambar 3"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel-foto-satu"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel-foto-satu"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div
+                id="carousel-foto-dua"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                class="carousel slide mt-4"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-dua"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-dua"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-dua"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <div class="carousel-inner rounded-4">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://picsum.photos/1280/720?random=4"
+                      alt="gambar 4"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://picsum.photos/1280/720?random=5"
+                      alt="gambar 5"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://picsum.photos/1280/720?random=6"
+                      alt="gambar 6"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel-foto-dua"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel-foto-dua"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>";
+const kisahHTML = "";
+btnCeritaGaleri.forEach((tombol) =>
+  tombol.addEventListener("click", () => {
+    const textCeritaGaleri = document.querySelector(`.text-cerita-galeri`);
+    if (textCeritaGaleri.innerHTML === `Galeri`) {
+      textCeritaGaleri.innerHTML = `Kisah Cinta`;
+      htmlCeritaGaleri.innerHTML = `kisahHTML`;
+    } else {
+      textCeritaGaleri.innerHTML = `Galeri`;
+      htmlCeritaGaleri.innerHTML = `galeriHTML`;
+    }
+  })
+);

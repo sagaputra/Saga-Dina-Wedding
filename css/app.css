@@ -7,6 +7,8 @@ body {
   padding: 0 !important;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  color: #594545;
+  background-color: #fff8ea;
 }
 
 body::-webkit-scrollbar {
@@ -15,12 +17,12 @@ body::-webkit-scrollbar {
 
 .font-esthetic {
   font-family: "Sacramento", cursive !important;
-  color: #ffffff !important;
+  color: #594545 !important;
 }
 
 .font-arabic {
   font-family: "Noto Naskh Arabic", serif !important;
-  color: #ffffff !important;
+  color: #594545 !important;
 }
 
 .img-crop {
@@ -42,20 +44,22 @@ body::-webkit-scrollbar {
   position: fixed;
   height: 32px;
   width: 32px;
-  bottom: 9vh;
+  bottom: 12vh;
   right: 2vh;
   z-index: 1055;
-  border: solid 1px white;
+  background-color: #fff8ea;
+  opacity: 75%;
 }
 
 .btn-gift {
+  background-color: #fff8ea;
   position: fixed;
   height: 32px;
   width: 32px;
-  bottom: 15vh;
+  bottom: 18vh;
   right: 2vh;
   z-index: 1055;
-  border: solid 1px white;
+  opacity: 75%;
 }
 
 .img-gift {
@@ -69,7 +73,7 @@ body::-webkit-scrollbar {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #111111;
+  background-color: #c69774;
   z-index: 1056 !important;
 }
 
@@ -78,10 +82,13 @@ body::-webkit-scrollbar {
 }
 
 .mouse-animation {
+  position: fixed;
+  bottom: 12vh;
+  left: 2vh;
+  z-index: 1055;
   padding: 0.25rem 0.625rem;
   height: 2rem;
-  border: 0.1rem solid #ffffff;
-  border-radius: 1.4rem;
+  background-color: #fff8ea;
   opacity: 0.75;
   box-sizing: content-box;
 }
@@ -92,12 +99,12 @@ body::-webkit-scrollbar {
   }
 
   10% {
-    transform: translateY(0);
+    transform: translateY(1rem);
     opacity: 1;
   }
 
   100% {
-    transform: translateY(1rem);
+    transform: translateY(0);
     opacity: 0;
   }
 }
@@ -106,7 +113,7 @@ body::-webkit-scrollbar {
   width: 0.25rem;
   height: 0.625rem;
   border-radius: 25%;
-  background-color: #ffffff;
+  background-color: black;
   animation-name: scroll;
   animation-duration: 2.5s;
   animation-timing-function: linear;
@@ -118,31 +125,43 @@ body::-webkit-scrollbar {
   width: 0.25rem;
   height: 0.625rem;
   border-radius: 25%;
-  background-color: #ffffff;
+  background-color: #c69774;
   animation-name: scroll;
   animation-duration: 2.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
+section {
+  color: #594545;
+}
+
 .dark-section {
-  background-color: #111111 !important;
+  background-color: #c69774 !important;
   margin-top: -0.4rem;
   margin-bottom: -0.4rem;
 }
 
 footer {
-  background-color: #111111 !important;
+  background-color: #c69774 !important;
   margin-top: -0.4rem;
   padding-bottom: 4rem;
 }
 
-.background-carousel {
-  background-image: url(https://picsum.photos/1280/720?random=3);
+.background-welcomepage {
+  background-image: url(../assets/images/bg.jpeg);
   background-position: center;
+  background-size: cover;
 }
 
 .welcomePage {
   background-image: url(../assets/images/rm428-0041.webp);
+  background-position: center;
   background-size: cover;
+}
+
+.btn-custom {
+  background-color: #c69774;
+  border: none;
+  font-weight: bold;
 }
