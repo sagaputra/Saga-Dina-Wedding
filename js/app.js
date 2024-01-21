@@ -1088,8 +1088,8 @@ window.onscroll = () => {
 // cerita & galeri
 const btnCeritaGaleri = document.querySelectorAll(`.btn-cerita-galeri`);
 const htmlCeritaGaleri = document.querySelector(`.html-cerita-galeri`);
-const galeriHTML = "<div
-                id="carousel-foto-satu"
+const galeriHTML = `<div
+                id="carousel-foto-satu";
                 data-aos="fade-up"
                 data-aos-duration="1500"
                 class="carousel slide"
@@ -1253,17 +1253,17 @@ const galeriHTML = "<div
                   ></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-              </div>";
-const kisahHTML = "";
+              </div>`;
+const kisahHTML = ``;
 btnCeritaGaleri.forEach((tombol) =>
   tombol.addEventListener("click", () => {
     const textCeritaGaleri = document.querySelector(`.text-cerita-galeri`);
     if (textCeritaGaleri.innerHTML === `Galeri`) {
       textCeritaGaleri.innerHTML = `Kisah Cinta`;
-      htmlCeritaGaleri.innerHTML = `kisahHTML`;
+      htmlCeritaGaleri.innerHTML = kisahHTML;
     } else {
       textCeritaGaleri.innerHTML = `Galeri`;
-      htmlCeritaGaleri.innerHTML = `galeriHTML`;
+      htmlCeritaGaleri.innerHTML = galeriHTML;
     }
   })
 );

@@ -228,18 +228,34 @@
     >
       <!-- Home -->
       <section
-        class="container background-welcomepage p-0"
+        class="container-fluid background-welcomepage px-0 vw-100 vh-100"
         id="home"
-        style="height: 100vh"
       >
         <div class="text-center pt-4">
-          <h1 class="font-esthetic mb-5" style="font-size: 2.5rem">
-            Undangan Pernikahan
+          <h1 class="font-arabic" style="font-size: 2rem">
+            بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+          </h1>
+          <h1 class="font-esthetic" style="font-size: 1rem">
+            Assalamualaikum Warahmatullahi Wabarakatuh
           </h1>
 
-          <div class="container-fluid position-relative" style="top: 25vh">
-            <div class="pt-5">
-              <div class="img-crop border-custom shadow mx-auto opacity-75">
+          <p>
+            Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk
+            menghadiri acara pernikahan kami:
+          </p>
+
+          <div
+            class="container-fluid position-relative py-3 px-0 d-block rounded-top-pill rounded-bottom-3 opacity-75"
+            style="
+              top: 18vh;
+              background-color: #fff8ea;
+              width: 250px;
+              background-image: url(./assets/images/background.jpeg);
+              background-size: cover;
+            "
+          >
+            <div>
+              <div class="d-flex img-crop border-custom shadow m-auto">
                 <img
                   src="./assets/images/bg.jpeg"
                   alt="bg"
@@ -247,20 +263,21 @@
                 />
               </div>
             </div>
+            <div class="d-block">
+              <h1 class="font-esthetic mt-1" style="font-size: 3rem">
+                Saga & Dina
+              </h1>
+              <h4>Minggu, 3 Maret 2024</h4>
 
-            <h1 class="font-esthetic mt-1" style="font-size: 3rem">
-              Saga & Dina
-            </h1>
-            <h4>Minggu, 3 Maret 2024</h4>
-
-            <a
-              class="btn btn-outline-light btn-sm shadow rounded-pill px-3 btn-custom"
-              target="_blank"
-              href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGljdjkxcnB0OGkwYzUzMzFrZHNrNDBvdDMgc2FnYXB1dHJhOEBt&tmsrc=sagaputra8%40gmail.com"
-            >
-              <i class="fa-solid fa-calendar-check p-1 btn-custom"></i> Save The
-              Date
-            </a>
+              <a
+                class="btn btn-outline-light btn-sm shadow rounded-pill px-3 btn-custom"
+                target="_blank"
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGljdjkxcnB0OGkwYzUzMzFrZHNrNDBvdDMgc2FnYXB1dHJhOEBt&tmsrc=sagaputra8%40gmail.com"
+              >
+                <i class="fa-solid fa-calendar-check p-1 btn-custom"></i> Save
+                The Date
+              </a>
+            </div>
           </div>
 
           <!-- scroll down display -->
@@ -274,23 +291,12 @@
             </a>
           </div>
         </div>
-      </section>
 
+        <!-- separator -->
+      </section>
       <!-- Mempelai -->
       <section class="dark-section py-5" id="mempelai">
         <div class="text-center">
-          <h1 class="font-arabic py-4 px-2" style="font-size: 2rem">
-            بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
-          </h1>
-          <h1 class="font-esthetic py-0 px-2" style="font-size: 2rem">
-            Assalamualaikum Warahmatullahi Wabarakatuh
-          </h1>
-
-          <p class="pb-1 px-3">
-            Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk
-            menghadiri acara pernikahan kami:
-          </p>
-
           <div class="overflow-x-hidden">
             <div data-aos="fade-right" data-aos-duration="2000">
               <div
@@ -332,7 +338,14 @@
       </section>
 
       <!-- Firman Allah Subhanahu Wa Ta'ala -->
-      <div class="container">
+      <div
+        class="container"
+        style="
+          background-image: url(../assets/images/background.jpeg);
+          background-position: center;
+          background-size: cover;
+        "
+      >
         <div
           class="text-center p-3"
           data-aos="fade-up"
@@ -358,7 +371,7 @@
 
       <!-- Tanggal -->
       <section class="dark-section" id="tanggal">
-        <div class="container">
+        <div class="container pb-2">
           <div class="text-center">
             <h1 class="font-esthetic py-3" style="font-size: 2rem">
               Waktu Menuju Acara
@@ -394,7 +407,7 @@
               </div>
             </div>
 
-            <p style="font-size: 0.9rem" class="mt-4 py-2">
+            <p style="font-size: 0.9rem" class="mt-4 mb-0">
               Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala,
               insyaAllah kami akan menyelenggarakan acara :
             </p>
@@ -423,7 +436,6 @@
                       align-items: center;
                       display: flex;
                       justify-content: center;
-                      color: var(--tc-a);
                       font-size: 33px;
                       font-weight: 400;
                       font-family: 'al';
@@ -443,21 +455,21 @@
                         color: #c69774;
                       "
                     >
-                      Akad Nikah
+                      Akad Nikah & Resepsi
                     </div>
                   </div>
                 </div>
                 <div
                   style="
                     width: 76%;
+                    background-image: url(./assets/images/background_body.png);
                     background-color: #fff8ea;
                     padding: 2em 1em 1em 1.5em;
-                    border: 2px solid var(--border-a);
+                    border-top-right-radius: 100px;
                   "
                 >
                   <div class="">
                     <div
-                      class="business-solution"
                       style="
                         background-color: transparent;
                         text-align: center;
@@ -469,95 +481,66 @@
                         <div
                           class="d-flex align-items-center mb-4"
                           style="
-                            border-bottom: 1px solid var(--color-a);
+                            border-bottom: 1px solid #594545;
                             padding-bottom: 20px;
                           "
                         >
                           <h2
-                            class="text-left title wow fadeIn mb-0 w-50 fontAdditional"
-                            data-wow-duration="2s"
-                            data-wow-delay="0.3s"
+                            class="mb-0 w-50"
                             style="
                               font-size: 100px;
                               color: var(--color-a) !important;
-                              visibility: visible;
-                              animation-duration: 2s;
-                              animation-delay: 0.3s;
-                              animation-name: fadeIn;
                             "
                           >
                             3
                           </h2>
                           <div class="w-50">
                             <p
-                              class="mb-0 wow fadeIn"
-                              data-wow-duration="2s"
-                              data-wow-delay="0.3s"
+                              class="mb-0"
                               style="
                                 margin-top: -3px;
                                 text-transform: uppercase;
                                 font-variant-caps: all-petite-caps;
                                 font-size: 23px;
                                 line-height: 1;
-                                visibility: visible;
-                                animation-duration: 2s;
-                                animation-delay: 0.3s;
-                                animation-name: fadeIn;
                               "
                             >
                               Minggu
                             </p>
                             <p
-                              class="mb-0 wow fadeIn"
-                              data-wow-duration="2s"
-                              data-wow-delay="0.3s"
+                              class="mb-0"
                               style="
                                 text-transform: uppercase;
                                 font-variant-caps: all-petite-caps;
                                 font-size: 23px;
                                 line-height: 1;
-                                visibility: visible;
-                                animation-duration: 2s;
-                                animation-delay: 0.3s;
-                                animation-name: fadeIn;
                               "
                             >
                               Maret
                             </p>
                             <p
-                              class="mb-0 wow fadeIn"
-                              data-wow-duration="2s"
-                              data-wow-delay="0.3s"
+                              class="mb-0"
                               style="
                                 text-transform: uppercase;
                                 font-variant-caps: all-petite-caps;
                                 font-size: 23px;
                                 line-height: 1;
-                                visibility: visible;
-                                animation-duration: 2s;
-                                animation-delay: 0.3s;
-                                animation-name: fadeIn;
                               "
                             >
                               2024
                             </p>
                           </div>
                         </div>
-                        <!-- <p class="text-center mb-0" style="margin-top:15px;font-weight: 600;"></p> -->
+                        <!-- waktu akad -->
                         <p
-                          style="
-                            margin-bottom: 5px;
-                            visibility: visible;
-                            animation-duration: 3s;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInUp;
-                          "
-                          class="text-left wow fadeInUp"
-                          data-wow-duration="3s"
-                          data-wow-delay="0.3s"
+                          class="text-center mb-0"
+                          style="margin-top: 15px; font-weight: 600"
                         >
+                          Akad Nikah
+                        </p>
+                        <p style="margin-bottom: 5px">
                           <i
-                            class="fa fa-clock-o"
+                            class="fa fa-clock"
                             style="
                               font-size: 20px;
                               position: relative;
@@ -566,246 +549,42 @@
                           ></i>
                           <span>09.00 WIB - 10.00 WIB</span>
                         </p>
-                        <h6
-                          class="text-left mb-0 wow fadeInUp"
-                          style="
-                            margin-top: 20px;
-                            font-variant-caps: all-petite-caps;
-                            font-size: 23px;
-                            font-weight: 500;
-                            letter-spacing: 1px;
-                            visibility: visible;
-                            animation-duration: 3s;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInUp;
-                          "
-                          data-wow-duration="3s"
-                          data-wow-delay="0.3s"
-                        >
-                          Lokasi Acara:
-                        </h6>
+                        <!-- waktu resepsi -->
                         <p
-                          class="text-left wow fadeInUp"
-                          style="
-                            margin-bottom: 15px;
-                            font-size: 15px;
-                            font-weight: 400;
-                            visibility: visible;
-                            animation-duration: 3s;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInUp;
-                          "
-                          data-wow-duration="3s"
-                          data-wow-delay="0.3s"
+                          class="text-center mb-0"
+                          style="margin-top: 15px; font-weight: 600"
                         >
-                          Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec.
-                          Jiken, Kab. Blora, Jawa Tengah 58372
+                          Resepsi
                         </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Resepsi -->
-            <div
-              class="row h-100 justify-content-center align-items-center mb-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <div
-                class="col-md-12"
-                style="display: flex; justify-content: center"
-              >
-                <div
-                  style="
-                    width: 24%;
-                    max-width: 70px !important;
-                    background-color: #594545;
-                    position: relative;
-                  "
-                >
-                  <div
-                    style="
-                      text-align: center;
-                      align-items: center;
-                      display: flex;
-                      justify-content: center;
-                      color: var(--tc-a);
-                      font-size: 33px;
-                      font-weight: 400;
-                      font-family: 'al';
-                      line-height: 1em;
-                      letter-spacing: 2px;
-                      text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.3);
-                      height: 100%;
-                      width: 100%;
-                      padding: 15px;
-                    "
-                  >
-                    <div
-                      style="
-                        writing-mode: vertical-lr;
-                        transform: rotate(180deg);
-                        text-transform: uppercase;
-                        color: #c69774;
-                      "
-                    >
-                      Resepsi
-                    </div>
-                  </div>
-                </div>
-                <div
-                  style="
-                    width: 76%;
-                    background-color: #fff8ea;
-                    padding: 2em 1em 1em 1.5em;
-                    border: 2px solid var(--border-a);
-                  "
-                >
-                  <div class="">
-                    <div
-                      class="business-solution"
-                      style="
-                        background-color: transparent;
-                        text-align: center;
-                        padding: 10px;
-                        padding-bottom: 40px;
-                      "
-                    >
-                      <div>
-                        <div
-                          class="d-flex align-items-center mb-4"
-                          style="
-                            border-bottom: 1px solid var(--color-a);
-                            padding-bottom: 20px;
-                          "
-                        >
-                          <h2
-                            class="text-left title wow fadeIn mb-0 w-50 fontAdditional"
-                            data-wow-duration="2s"
-                            data-wow-delay="0.3s"
-                            style="
-                              font-size: 100px;
-                              color: var(--color-a) !important;
-                              visibility: visible;
-                              animation-duration: 2s;
-                              animation-delay: 0.3s;
-                              animation-name: fadeIn;
-                            "
-                          >
-                            3
-                          </h2>
-                          <div class="w-50">
-                            <p
-                              class="mb-0 wow fadeIn"
-                              data-wow-duration="2s"
-                              data-wow-delay="0.3s"
-                              style="
-                                margin-top: -3px;
-                                text-transform: uppercase;
-                                font-variant-caps: all-petite-caps;
-                                font-size: 23px;
-                                line-height: 1;
-                                visibility: visible;
-                                animation-duration: 2s;
-                                animation-delay: 0.3s;
-                                animation-name: fadeIn;
-                              "
-                            >
-                              Minggu
-                            </p>
-                            <p
-                              class="mb-0 wow fadeIn"
-                              data-wow-duration="2s"
-                              data-wow-delay="0.3s"
-                              style="
-                                text-transform: uppercase;
-                                font-variant-caps: all-petite-caps;
-                                font-size: 23px;
-                                line-height: 1;
-                                visibility: visible;
-                                animation-duration: 2s;
-                                animation-delay: 0.3s;
-                                animation-name: fadeIn;
-                              "
-                            >
-                              Maret
-                            </p>
-                            <p
-                              class="mb-0 wow fadeIn"
-                              data-wow-duration="2s"
-                              data-wow-delay="0.3s"
-                              style="
-                                text-transform: uppercase;
-                                font-variant-caps: all-petite-caps;
-                                font-size: 23px;
-                                line-height: 1;
-                                visibility: visible;
-                                animation-duration: 2s;
-                                animation-delay: 0.3s;
-                                animation-name: fadeIn;
-                              "
-                            >
-                              2024
-                            </p>
-                          </div>
-                        </div>
-                        <!-- <p class="text-center mb-0" style="margin-top:15px;font-weight: 600;"></p> -->
-                        <p
-                          style="
-                            margin-bottom: 5px;
-                            visibility: visible;
-                            animation-duration: 3s;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInUp;
-                          "
-                          class="text-left wow fadeInUp"
-                          data-wow-duration="3s"
-                          data-wow-delay="0.3s"
-                        >
+                        <p style="margin-bottom: 5px">
                           <i
-                            class="fa fa-clock-o"
+                            class="fa fa-clock"
                             style="
                               font-size: 20px;
                               position: relative;
                               top: 2px;
                             "
                           ></i>
-                          <span>10.00 WIB - Selesai</span>
+                          <span>11.00 WIB - Selesai</span>
                         </p>
                         <h6
-                          class="text-left mb-0 wow fadeInUp"
+                          class="mb-0"
                           style="
                             margin-top: 20px;
                             font-variant-caps: all-petite-caps;
                             font-size: 23px;
                             font-weight: 500;
                             letter-spacing: 1px;
-                            visibility: visible;
-                            animation-duration: 3s;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInUp;
                           "
-                          data-wow-duration="3s"
-                          data-wow-delay="0.3s"
                         >
                           Lokasi Acara:
                         </h6>
                         <p
-                          class="text-left wow fadeInUp"
                           style="
                             margin-bottom: 15px;
                             font-size: 15px;
                             font-weight: 400;
-                            visibility: visible;
-                            animation-duration: 3s;
-                            animation-delay: 0.3s;
-                            animation-name: fadeInUp;
                           "
-                          data-wow-duration="3s"
-                          data-wow-delay="0.3s"
                         >
                           Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec.
                           Jiken, Kab. Blora, Jawa Tengah 58372
@@ -822,7 +601,10 @@
               class="container-fluid border shadow rounded"
               data-aos="fade-up"
               data-aos-duration="1500"
-              style="background-color: #fff8ea"
+              style="
+                background-color: #fff8ea;
+                background-image: url(./assets/images/background_body.png);
+              "
             >
               <iframe
                 class="container-fluid px-3 py-3"
@@ -834,20 +616,24 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-            </div>
-            <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
-              <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem">
-                Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec. Jiken, Kab.
-                Blora, Jawa Tengah 58372
-              </p>
-              <a
-                href="https://maps.app.goo.gl/xK7JnFq9KNsP7gYU8"
-                target="_blank"
-                class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3"
-              >
-                <i class="fa-solid fa-map-location-dot me-2"></i>Lihat di Google
-                Maps
-              </a>
+              <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
+                <p class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.9rem">
+                  Desa Jiken RT/RW 004/004 (Rumah Depan Masjid), Kec. Jiken,
+                  Kab. Blora, Jawa Tengah 58372
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/xK7JnFq9KNsP7gYU8"
+                  target="_blank"
+                  class="btn btn-sm rounded-pill shadow-sm mb-2 px-3"
+                  style="background-color: #c69774; color: #fff8ea"
+                >
+                  <i
+                    class="fa-solid fa-map-location-dot me-2"
+                    style="color: #fff8ea"
+                  ></i
+                  >Lihat di Google Maps
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -856,11 +642,19 @@
       <!-- Galeri & Cerita -->
       <section class="dark-section" id="galeri">
         <div class="container pb-2 pt-4">
-          <div class="card-body border rounded-4 shadow p-3 text-center">
+          <div
+            class="card-body rounded-4 shadow p-3 text-center"
+            style="border: 3px solid #594545"
+          >
             <button
               type="button"
               class="btn btn-cerita-galeri"
-              style="background-color: transparant; border: none"
+              style="
+                background-color: transparant;
+                border: none;
+                position: relative;
+                left: 1vw;
+              "
             >
               <i class="fa-solid fa-angle-left d-inline"></i>
             </button>
@@ -879,182 +673,23 @@
             >
               <i class="fa-solid fa-angle-right d-inline"></i>
             </button>
-            <div class="container-fluid p-0 m-0 html-cerita-galeri">
-              <div
-                id="carousel-foto-satu"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-foto-satu"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-foto-satu"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-foto-satu"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-
-                <div class="carousel-inner rounded-4">
-                  <div class="carousel-item active">
-                    <img
-                      src="https://picsum.photos/1280/720?random=1"
-                      alt="gambar 1"
-                      class="d-block w-100"
-                      onclick="util.modal(this)"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://picsum.photos/1280/720?random=2"
-                      alt="gambar 2"
-                      class="d-block w-100"
-                      onclick="util.modal(this)"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://picsum.photos/1280/720?random=3"
-                      alt="gambar 3"
-                      class="d-block w-100"
-                      onclick="util.modal(this)"
-                    />
-                  </div>
-                </div>
-
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carousel-foto-satu"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carousel-foto-satu"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <div
-                id="carousel-foto-dua"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                class="carousel slide mt-4"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-foto-dua"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-foto-dua"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-foto-dua"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-
-                <div class="carousel-inner rounded-4">
-                  <div class="carousel-item active">
-                    <img
-                      src="https://picsum.photos/1280/720?random=4"
-                      alt="gambar 4"
-                      class="d-block w-100"
-                      onclick="util.modal(this)"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://picsum.photos/1280/720?random=5"
-                      alt="gambar 5"
-                      class="d-block w-100"
-                      onclick="util.modal(this)"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="https://picsum.photos/1280/720?random=6"
-                      alt="gambar 6"
-                      class="d-block w-100"
-                      onclick="util.modal(this)"
-                    />
-                  </div>
-                </div>
-
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carousel-foto-dua"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carousel-foto-dua"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
+            <div class="container-fluid p-0 m-0 html-cerita-galeri"></div>
           </div>
         </div>
       </section>
 
       <!-- Ucapan -->
-      <section class="my-4 p-0" id="ucapan">
-        <div class="container">
-          <div class="card-body border rounded-4 shadow p-3">
+      <section
+        class="my-4 p-0"
+        id="ucapan"
+        style="
+          background-image: url(../assets/images/background.jpeg);
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div class="container p-2">
+          <div class="card-body border rounded-4 shadow p-3 m-1">
             <h1 class="font-esthetic text-center mb-3" style="font-size: 3rem">
               Ucapan & Doa
             </h1>
@@ -1161,7 +796,7 @@
     </main>
 
     <!-- Footer Undangan -->
-    <footer>
+    <footer class="dark-section">
       <div class="container">
         <div class="text-center">
           <p
@@ -1214,7 +849,7 @@
     <div class="loading-page welcomePage" id="welcome" style="opacity: 1">
       <div
         class="d-flex justify-content-center align-items-center"
-        style="height: 100vh !important"
+        style="height: 100vh !important; width: 100vw !important"
       >
         <div class="text-center">
           <h1 class="mb-4" style="font-size: 1rem">Assalamualaikum Wr. Wb.</h1>
