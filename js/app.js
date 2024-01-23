@@ -1303,7 +1303,7 @@ const kisahHTML = `<!--Kisah Cinta  -->
                     <div class=" d-md-block">
                       <h5>2021-2023</h5>
                       <p>
-                        Setelah selesai menjalani studi, kami pun bekerja diperusahaan yang sama dan mulai menyusun rencana serta berangan angan untuk menyatukan tujuan bersama dan pada bulan Juni 2023 memantapkan hati untuk mempertemukan kedua keluarga
+                        Setelah selesai menjalani studi, kami pun mulai menyusun rencana serta berangan angan untuk menyatukan tujuan bersama dan pada bulan Juni 2023 memantapkan hati untuk mempertemukan kedua keluarga
                       </p>
                     </div>
                   </div>
@@ -1316,7 +1316,7 @@ const kisahHTML = `<!--Kisah Cinta  -->
                     <div class=" d-md-block">
                       <h5>2024</h5>
                       <p>
-                        Alhamdulillah, pada tanggal 3 bulan 3, 2024, setelah kami menjalani hampir 10 tahun kisah cinta, kami akan melangsungkan pernikahan dan membagikan kebahagiaan pada semua rekan dan saudara yang dapat hadir maupun tidak di acara kami. mohon doa restu agar hubungan menjadi pasangan yang sakinah mawaddah warahmah. terimakasih ❤️
+                        Alhamdulillah, pada tanggal 3 bulan 3, 2024, setelah kami menjalani hampir 10 tahun kisah cinta, kami akan melangsungkan pernikahan dan membagikan kebahagiaan pada semua rekan dan saudara yang dapat hadir maupun tidak di acara kami. mohon doa restu agar menjadi pasangan yang sakinah mawaddah warahmah. terimakasih ❤️
                       </p>
                     </div>
                   </div>
