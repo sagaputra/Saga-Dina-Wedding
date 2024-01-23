@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 }
 
 .font-esthetic {
-  font-family: "Sacramento", cursive !important;
+  font-family: "Dancing Script", cursive !important;
   color: #594545 !important;
 }
 
@@ -157,15 +157,10 @@ footer {
 }
 
 .background-welcomepage {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
+  background-image: linear-gradient(180deg, transparent 0 30%, #fff8ea 90% 100%),
     url(../assets/images/bg.jpeg);
   background-position: center;
   background-size: cover;
-  border-radius: 3vh;
 }
 
 .welcomePage {

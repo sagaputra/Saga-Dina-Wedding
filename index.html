@@ -120,13 +120,6 @@
       crossorigin="anonymous"
       as="script"
     />
-    <link
-      rel="preload"
-      href="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"
-      integrity="sha256-XG5M9shcLLpu8ct5bVbu6lLVzLpfZChl+csxdyLVP18="
-      crossorigin="anonymous"
-      as="script"
-    />
 
     <!-- Dependencies CSS -->
     <link
@@ -167,7 +160,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <!-- App CSS -->
     <link rel="stylesheet" href="./css/app.css" />
   </head>
@@ -311,8 +307,9 @@
               <h1 class="font-esthetic" style="font-size: 3rem">
                 Saga Bagus Putra Pridayanto
               </h1>
-              <h5 class="mt-0 mb-0">Putra</h5>
-              <p class="mb-0">Bapak Agus Supriyanto & Ibu Saodah</p>
+              <p class="mb-0">
+                Putra pertama Bapak Agus Supriyanto & Ibu Saodah
+              </p>
             </div>
 
             <h1 class="font-esthetic my-0" style="font-size: 4rem">&</h1>
@@ -330,8 +327,9 @@
               <h1 class="font-esthetic" style="font-size: 3rem">
                 Ayu Maulidina Larasati
               </h1>
-              <h5 class="mt-0 mb-0">Putri</h5>
-              <p class="mb-0">Bapak Masrur & Ibu Tri Murtiati</p>
+              <p class="mb-0">
+                Putri bungsu dari Bapak Masrur & Ibu Tri Murtiati
+              </p>
             </div>
           </div>
         </div>
@@ -644,11 +642,16 @@
         <div class="container pb-2 pt-4">
           <div
             class="card-body rounded-4 shadow p-3 text-center"
-            style="border: 3px solid #594545; background-color: #fff8ea"
+            style="
+              border: 3px solid #594545;
+              background-color: #fff8ea;
+              background-image: url(./assets/images/background.jpeg);
+              background-size: cover;
+            "
           >
             <button
               type="button"
-              class="btn btn-cerita-galeri"
+              class="btn btn-cerita-galeri fa-bounce"
               style="
                 background-color: transparant;
                 border: none;
@@ -668,7 +671,7 @@
             </h1>
             <button
               type="button"
-              class="btn btn-cerita-galeri"
+              class="btn btn-cerita-galeri fa-bounce"
               style="background-color: transparant; border: none"
             >
               <i class="fa-solid fa-angle-right d-inline"></i>
@@ -871,7 +874,7 @@
 
           <button
             type="button"
-            class="btn btn-light shadow rounded-4 mt-4 btn-custom"
+            class="btn btn-light shadow rounded-4 mt-4 btn-custom fa-fade"
             onclick="util.buka()"
           >
             <i class="fa-solid fa-envelope-open me-2"></i>Buka Undangan
