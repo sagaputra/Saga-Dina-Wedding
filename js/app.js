@@ -98,27 +98,46 @@ const util = (() => {
 
   let clear = null;
   const salin = (btn, msg = "Tersalin", timeout = 1500) => {
-    navigator.clipboard.writeText(btn.getAttribute("data-nomer")).then(() => {
-      let tmp = btn.innerHTML;
-      btn.innerHTML = msg;
-      btn.disabled = true;
-      let dataBank =
-        btn.getAttribute("data-bank") + btn.getAttribute("data-nomer");
+    navigator.clipboard
+      .writeText(btn.getAttribute("data-nomer"))
+      .then(() => {
+        let tmp = btn.innerHTML;
+        btn.innerHTML = msg;
+        btn.disabled = true;
+        let dataBank = btn.getAttribute("data-nomer");
+        if (btn.getAttribute("data-bank") === `BNI: `) {
+          document.querySelector(`.js-generate-gifthtml`).innerHTML = `<img
+                            class="img-fluid"
+                            style="height: 15px"
+                            src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png"
+                            alt=""
+                          /><p>${dataBank}</p>`;
+        } else if (btn.getAttribute("data-bank") === `BRI: `) {
+          document.querySelector(`.js-generate-gifthtml`).innerHTML = `<img
+                            class="img-fluid"
+                            style="height: 15px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/BANK_BRI_logo.svg/640px-BANK_BRI_logo.svg.png"
+                            alt=""
+                          /><p>${dataBank}</p>`;
+        } else {
+          document.querySelector(
+            `.js-generate-gifthtml`
+          ).innerHTML = `<i class="fa-solid fa-map-location-dot me-2"></i
+                          ><p>${dataBank}</p>`;
+        }
+        clear = setTimeout(() => {
+          btn.innerHTML = tmp;
+          btn.disabled = false;
+          btn.focus();
 
-      document.querySelector(`.js-generate-gifthtml`).innerHTML = dataBank;
-      clear = setTimeout(() => {
-        btn.innerHTML = tmp;
-        btn.disabled = false;
-        btn.focus();
-
-        clearTimeout(clear);
-        clear = null;
-        return;
-      }, timeout);
-    }),
-      () => {
+          clearTimeout(clear);
+          clear = null;
+          return;
+        }, timeout);
+      })
+      .catch(() => {
         alert(`copy failed`);
-      };
+      });
   };
 
   const timer = () => {
