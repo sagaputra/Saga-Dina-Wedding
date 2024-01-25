@@ -96,6 +96,7 @@ const util = (() => {
       .replace(/'/g, "&#039;");
   };
 
+  let clear = null;
   const salin = (btn, msg = "Tersalin", timeout = 1500) => {
     navigator.clipboard.writeText(btn.getAttribute("data-nomer")).then(() => {
       let tmp = btn.innerHTML;
@@ -105,7 +106,6 @@ const util = (() => {
         btn.getAttribute("data-bank") + btn.getAttribute("data-nomer");
 
       document.querySelector(`.js-generate-gifthtml`).innerHTML = dataBank;
-      let clear = null;
       clear = setTimeout(() => {
         btn.innerHTML = tmp;
         btn.disabled = false;
