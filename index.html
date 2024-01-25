@@ -201,7 +201,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#galeri">
             <i class="fa-solid fa-images"></i>
-            <span class="d-block" style="font-size: 0.7rem">Galeri</span>
+            <span class="d-block" style="font-size: 0.7rem">Galeri&Kisah</span>
           </a>
         </li>
         <li class="nav-item">
@@ -228,10 +228,10 @@
         id="home"
       >
         <div class="text-center pt-4">
-          <h1 class="font-arabic" style="font-size: 2rem">
+          <h1 class="font-arabic notranslate" style="font-size: 2rem">
             بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
           </h1>
-          <h1 class="font-esthetic" style="font-size: 1rem">
+          <h1 class="font-esthetic notranslate" style="font-size: 1rem">
             Assalamualaikum Warahmatullahi Wabarakatuh
           </h1>
 
@@ -275,8 +275,8 @@
                 target="_blank"
                 href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MGljdjkxcnB0OGkwYzUzMzFrZHNrNDBvdDMgc2FnYXB1dHJhOEBt&tmsrc=sagaputra8%40gmail.com"
               >
-                <i class="fa-solid fa-calendar-check p-1 btn-custom"></i> Save
-                The Date
+                <i class="fa-solid fa-calendar-check p-1 btn-custom"></i> Simpan
+                Tanggalnya
               </a>
             </div>
           </div>
@@ -309,7 +309,7 @@
                   onclick="util.modal(this)"
                 />
               </div>
-              <h1 class="font-esthetic" style="font-size: 3rem">
+              <h1 class="font-esthetic notranslate" style="font-size: 3rem">
                 Saga Bagus Putra Pridayanto
               </h1>
               <p class="mb-0">
@@ -329,7 +329,7 @@
                   onclick="util.modal(this)"
                 />
               </div>
-              <h1 class="font-esthetic" style="font-size: 3rem">
+              <h1 class="font-esthetic notranslate" style="font-size: 3rem">
                 Ayu Maulidina Larasati
               </h1>
               <p class="mb-0">
@@ -818,11 +818,15 @@
             kami ucapkan terimakasih.
           </p>
 
-          <h1 class="font-esthetic" data-aos="fade-up" data-aos-duration="2000">
+          <h1
+            class="font-esthetic notranslate"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             Wassalamualaikum Warahmatullahi Wabarakatuh
           </h1>
           <h1
-            class="font-arabic py-4 px-2"
+            class="font-arabic py-4 px-2 notranslate"
             data-aos="fade-up"
             data-aos-duration="2000"
             style="font-size: 2rem"
@@ -854,7 +858,9 @@
     </footer>
 
     <!-- Welcome Page -->
+
     <div class="loading-page welcomePage" id="welcome" style="opacity: 1">
+      <div class="container-fluid" id="google_translate_element"></div>
       <div
         class="d-flex justify-content-center align-items-center"
         style="height: 100vh !important; width: 100vw !important"
@@ -1078,6 +1084,20 @@
       src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"
       integrity="sha256-XG5M9shcLLpu8ct5bVbu6lLVzLpfZChl+csxdyLVP18="
       crossorigin="anonymous"
+    ></script>
+
+    <!-- googletranslate -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "in", includedLanguages: `en,id` },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
 
     <!-- App JS -->
