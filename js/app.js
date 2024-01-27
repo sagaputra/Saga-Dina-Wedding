@@ -1093,29 +1093,85 @@ const galeriHTML = `<!--Galeri-->
                     data-bs-slide-to="2"
                     aria-label="Slide 3"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-satu"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
                 </div>
 
                 <div class="carousel-inner rounded-4">
                   <div class="carousel-item active">
                     <img
-                      src="https://picsum.photos/1280/720?random=1"
-                      alt="gambar 1"
+                      src="./assets/images/Galeri/BPP_5028.JPG"
+                      alt="gambar 1.1"
                       class="d-block w-100"
                       onclick="util.modal(this)"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="https://picsum.photos/1280/720?random=2"
-                      alt="gambar 2"
+                      src="/assets/images/Galeri/BPP_5049.JPG"
+                      alt="gambar 1.2"
                       class="d-block w-100"
                       onclick="util.modal(this)"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="https://picsum.photos/1280/720?random=3"
-                      alt="gambar 3"
+                      src="/assets/images/Galeri/BPP_5051.JPG"
+                      alt="gambar 1.3"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/images/Galeri/BPP_5058.JPG"
+                      alt="gambar 1.4"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/images/Galeri/BPP_5063.JPG"
+                      alt="gambar 1.5"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/images/Galeri/BPP_5090.JPG"
+                      alt="gambar 1.6"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/images/Galeri/BPP_5093.JPG"
+                      alt="gambar 1.7"
                       class="d-block w-100"
                       onclick="util.modal(this)"
                     />
@@ -1176,29 +1232,43 @@ const galeriHTML = `<!--Galeri-->
                     data-bs-slide-to="2"
                     aria-label="Slide 3"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-foto-dua"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
                 </div>
 
                 <div class="carousel-inner rounded-4">
                   <div class="carousel-item active">
                     <img
-                      src="https://picsum.photos/1280/720?random=4"
-                      alt="gambar 4"
+                      src="/assets/images/Galeri/BPP_5033.JPG"
+                      alt="gambar 2.1"
                       class="d-block w-100"
                       onclick="util.modal(this)"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="https://picsum.photos/1280/720?random=5"
-                      alt="gambar 5"
+                      src="/assets/images/Galeri/BPP_5040.JPG"
+                      alt="gambar 2.2"
                       class="d-block w-100"
                       onclick="util.modal(this)"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="https://picsum.photos/1280/720?random=6"
-                      alt="gambar 6"
+                      src="/assets/images/Galeri/BPP_5077.JPG"
+                      alt="gambar 2.3"
+                      class="d-block w-100"
+                      onclick="util.modal(this)"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/images/Galeri/BPP_5077.JPG"
+                      alt="gambar 2.4"
                       class="d-block w-100"
                       onclick="util.modal(this)"
                     />
@@ -1276,9 +1346,10 @@ const kisahHTML = `<!--Kisah Cinta  -->
                 <div class="carousel-inner rounded-4">
                   <div class="carousel-item active">
                     <img
-                      src="https://picsum.photos/1280/720?random=1"
+                      src="./assets/images/Galeri/BPP_5084.JPG"
                       class="d-block w-100"
                       alt="..."
+                      onclick="util.modal(this)"
                     />
                     <div class=" d-md-block">
                       <h5>2014</h5>
@@ -1289,9 +1360,10 @@ const kisahHTML = `<!--Kisah Cinta  -->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="https://picsum.photos/1280/720?random=2"
+                      src="./assets/images/Galeri/BPP_5077.JPG"
                       class="d-block w-100"
                       alt="..."
+                      onclick="util.modal(this)"
                     />
                     <div class=" d-md-block">
                       <h5>2014-2016</h5>
@@ -1302,9 +1374,10 @@ const kisahHTML = `<!--Kisah Cinta  -->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="https://picsum.photos/1280/720?random=3"
+                      src="./assets/images/Galeri/BPP_5033.JPG"
                       class="d-block w-100"
                       alt="..."
+                      onclick="util.modal(this)"
                     />
                     <div class=" d-md-block">
                       <h5>2016-2021</h5>
@@ -1315,9 +1388,10 @@ const kisahHTML = `<!--Kisah Cinta  -->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="https://picsum.photos/1280/720?random=3"
+                      src="./assets/images/Galeri/BPP_5031.JPG"
                       class="d-block w-100"
                       alt="..."
+                      onclick="util.modal(this)"
                     />
                     <div class=" d-md-block">
                       <h5>2021-2023</h5>
@@ -1328,9 +1402,10 @@ const kisahHTML = `<!--Kisah Cinta  -->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="https://picsum.photos/1280/720?random=3"
+                      src="./assets/images/Galeri/BPP_5033.JPG"
                       class="d-block w-100"
                       alt="..."
+                      onclick="util.modal(this)"
                     />
                     <div class=" d-md-block">
                       <h5>2024</h5>
