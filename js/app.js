@@ -1122,7 +1122,7 @@ const galeriHTML = `<!--Galeri-->
                 <div class="carousel-inner rounded-4">
                   <div class="carousel-item active">
                     <img
-                      src="./assets/images/Galeri/BPP_5028.JPG"
+                      src="./assets/images/Galeri/BPP_5028.webp"
                       alt="gambar 1.1"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1130,7 +1130,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5049.JPG"
+                      src="/assets/images/Galeri/BPP_5049.webp"
                       alt="gambar 1.2"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1138,7 +1138,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5051.JPG"
+                      src="/assets/images/Galeri/BPP_5051.webp"
                       alt="gambar 1.3"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1146,7 +1146,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5058.JPG"
+                      src="/assets/images/Galeri/BPP_5058.webp"
                       alt="gambar 1.4"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1154,7 +1154,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5063.JPG"
+                      src="/assets/images/Galeri/BPP_5063.webp"
                       alt="gambar 1.5"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1162,7 +1162,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5090.JPG"
+                      src="/assets/images/Galeri/BPP_5090.webp"
                       alt="gambar 1.6"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1170,7 +1170,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5093.JPG"
+                      src="/assets/images/Galeri/BPP_5093.webp"
                       alt="gambar 1.7"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1243,7 +1243,7 @@ const galeriHTML = `<!--Galeri-->
                 <div class="carousel-inner rounded-4">
                   <div class="carousel-item active">
                     <img
-                      src="/assets/images/Galeri/BPP_5033.JPG"
+                      src="/assets/images/Galeri/BPP_5033.webp"
                       alt="gambar 2.1"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1251,7 +1251,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5040.JPG"
+                      src="/assets/images/Galeri/BPP_5040.webp"
                       alt="gambar 2.2"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1259,7 +1259,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5077.JPG"
+                      src="/assets/images/Galeri/BPP_5077.webp"
                       alt="gambar 2.3"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1267,7 +1267,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/images/Galeri/BPP_5077.JPG"
+                      src="/assets/images/Galeri/BPP_5077.webp"
                       alt="gambar 2.4"
                       class="d-block w-100"
                       onclick="util.modal(this)"
@@ -1346,7 +1346,7 @@ const kisahHTML = `<!--Kisah Cinta  -->
                 <div class="carousel-inner rounded-4">
                   <div class="carousel-item active">
                     <img
-                      src="./assets/images/Galeri/BPP_5084.JPG"
+                      src="./assets/images/Galeri/BPP_5084.webp"
                       class="d-block w-100"
                       alt="..."
                       onclick="util.modal(this)"
@@ -1360,7 +1360,7 @@ const kisahHTML = `<!--Kisah Cinta  -->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="./assets/images/Galeri/BPP_5077.JPG"
+                      src="./assets/images/Galeri/BPP_5077.webp"
                       class="d-block w-100"
                       alt="..."
                       onclick="util.modal(this)"
@@ -1374,7 +1374,7 @@ const kisahHTML = `<!--Kisah Cinta  -->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="./assets/images/Galeri/BPP_5033.JPG"
+                      src="./assets/images/Galeri/BPP_5033.webp"
                       class="d-block w-100"
                       alt="..."
                       onclick="util.modal(this)"
@@ -1388,7 +1388,7 @@ const kisahHTML = `<!--Kisah Cinta  -->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="./assets/images/Galeri/BPP_5031.JPG"
+                      src="./assets/images/Galeri/BPP_5031.webp"
                       class="d-block w-100"
                       alt="..."
                       onclick="util.modal(this)"
@@ -1402,7 +1402,7 @@ const kisahHTML = `<!--Kisah Cinta  -->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="./assets/images/Galeri/BPP_5033.JPG"
+                      src="./assets/images/Galeri/BPP_5033.webp"
                       class="d-block w-100"
                       alt="..."
                       onclick="util.modal(this)"
