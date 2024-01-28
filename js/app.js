@@ -209,6 +209,7 @@ const util = (() => {
     opacity("welcome");
     document.getElementById("tombol-musik").style.display = "block";
     timer();
+    await session.check();
   };
 
   return {
