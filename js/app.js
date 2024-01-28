@@ -1268,7 +1268,7 @@ const galeriHTML = `<!--Galeri-->
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="./assets/images/Galeri/BPP_5077.webp"
+                      src="./assets/images/Galeri/BPP_5084.webp"
                       alt="gambar 2.4"
                       class="d-block w-100"
                       onclick="util.modal(this)"
