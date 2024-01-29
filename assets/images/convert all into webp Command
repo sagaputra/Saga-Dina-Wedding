@@ -1,0 +1,1 @@
+for f in *.jpg; do cwebp -q 90 "$f" -o "${f}".webp; done
